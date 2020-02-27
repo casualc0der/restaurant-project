@@ -6,7 +6,7 @@ import { aboutUs, aboutUsContents } from './about-us.js';
 import { clearSection } from './clearSection.js';
 
 startUp();
-const menuTrigger = document.getElementById('menuButton');
+const menuTrigger = document.getElementById('tab1');
 const aboutTrigger = document.getElementById('aboutUsButton');
 
 menuTrigger.addEventListener('click', () =>{

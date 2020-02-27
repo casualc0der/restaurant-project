@@ -1,6 +1,6 @@
 const menu = () => {
 
-  const menuNode = document.getElementById('viewGrid');
+  const menuNode = document.getElementById('tabContent1');
   let menuGrid = document.createElement('div');
   menuGrid.id = 'menuGrid';
   menuNode.appendChild(menuGrid);
