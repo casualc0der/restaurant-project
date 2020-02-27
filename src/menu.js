@@ -12,6 +12,10 @@ const menuContents = () => {
   const contentNode = document.getElementById('menuGrid');
   let contentGrid = document.createElement('div');
   contentGrid.id = 'contentGrid';
+  contentNode.appendChild(contentGrid);
+  let menuTitle = document.createElement('h1');
+  menuTitle.innerHTML = 'Menu'
+  contentGrid.appendChild(menuTitle);
 
   const meal = (name, description, price) => {
   
@@ -27,6 +31,8 @@ const menu = [
 menu.forEach((e) => {
   
   let mealNode = document.createElement('ul');
+  mealNode.classList.add('menuItem');
+  mealNode.style.listStyleType = 'none';
   let nameOfDish = document.createElement('li');
   let descriptionOfDish = document.createElement('li');
   let priceOfDish = document.createElement('li');
@@ -41,10 +47,5 @@ menu.forEach((e) => {
   contentNode.appendChild(mealNode);  
 
 })
-
-
- //hardcoded test//
-//  contentGrid.innerHTML = `${menu[0].name} ${menu[0].description} ${menu[0].price}`;
-//  contentNode.appendChild(contentGrid);
 }
 export { menu, menuContents }
