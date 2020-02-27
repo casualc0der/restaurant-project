@@ -1,9 +1,20 @@
 const menu = () => {
 
-  const contentNode = document.getElementById('tabContent1');
-  let contentGrid = document.createElement('p');
+  const menuNode = document.getElementById('viewGrid');
+  let menuGrid = document.createElement('div');
+  menuGrid.id = 'menuGrid';
+  menuNode.appendChild(menuGrid);
+  
+
+
+};
+
+const menuContents = () => {
+
+  const contentNode = document.getElementById('menuGrid');
+  let contentGrid = document.createElement('div');
   contentGrid.id = 'contentGrid';
   contentGrid.innerHTML = 'menu';
   contentNode.appendChild(contentGrid);
 }
-export { menu }
+export { menu, menuContents }
