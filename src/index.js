@@ -1,5 +1,6 @@
 //this will be the initial view controller
 
+import './styles.css';
 import { startUp } from './page_load';
 import { menu, menuContents } from './menu.js';
 import { aboutUs, aboutUsContents } from './about-us.js';

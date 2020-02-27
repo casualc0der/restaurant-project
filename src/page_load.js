@@ -6,6 +6,9 @@ const startUp = () => {
   let navBar = document.createElement('nav');
   navBar.id = 'navBar';
   let viewGrid = document.createElement('div');
+  
+
+
   let menuButton = document.createElement('button');
   let aboutUsButton = document.createElement('button');
   let homePageButton = document.createElement('button');
