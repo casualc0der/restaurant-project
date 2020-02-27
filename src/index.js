@@ -7,6 +7,8 @@ import { clearSection } from './clearSection.js';
 import { homePage, homePageContents } from './home.js';
 
 startUp();
+homePage();
+homePageContents();
 
 const homeTrigger = document.getElementById('homePageButton')
 const menuTrigger = document.getElementById('menuButton');

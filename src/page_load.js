@@ -3,6 +3,8 @@ const startUp = () => {
 
   const mainNode = document.getElementById('main-content');
   let heroImage = document.createElement('div');
+  let navBar = document.createElement('nav');
+  navBar.id = 'navBar';
   let viewGrid = document.createElement('div');
   let menuButton = document.createElement('button');
   let aboutUsButton = document.createElement('button');
@@ -16,10 +18,14 @@ const startUp = () => {
   homePageButton.id = 'homePageButton';
   homePageButton.innerHTML = 'Home'
 
+  const navNode = document.getElementById('navBar')
+
+
+  navBar.appendChild(homePageButton);
+  navBar.appendChild(menuButton);
+  navBar.appendChild(aboutUsButton);
   mainNode.appendChild(heroImage);
-  mainNode.appendChild(homePageButton);
-  mainNode.appendChild(menuButton);
-  mainNode.appendChild(aboutUsButton);
+  mainNode.appendChild(navBar);
   mainNode.appendChild(viewGrid);
 };
 
