@@ -12,7 +12,7 @@ const tabTwo = (x) => {
   tabsyLabel2.classList.add('tabButton');
   tabsyLabel2.setAttribute('for', 'tab2');
   tabsyLabel2.id = 'tab2';
-  tabsyLabel2.innerHTML = 'Tab Two';
+  tabsyLabel2.innerHTML = 'About Us';
   
   let tabsyTabContent2 = document.createElement('div');
   tabsyTabContent2.classList.add('tab');

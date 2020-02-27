@@ -1,6 +1,6 @@
 import { tabOne } from './tab1.js';
 import { tabTwo } from './tab2.js';
-
+import { tabThree } from './tab3.js';
 const startUp = () => { 
   
   const mainNode = document.getElementById('main-content');
@@ -11,6 +11,7 @@ const startUp = () => {
   mainNode.appendChild(viewGrid);
   tabOne(viewGrid);
   tabTwo(viewGrid); 
+  tabThree(viewGrid);
 };
 
 

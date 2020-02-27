@@ -11,7 +11,7 @@ const tabOne = (x) => {
   tabsyLabel1.classList.add('tabButton');
   tabsyLabel1.setAttribute('for', 'tab1');
   tabsyLabel1.id = 'tab1';
-  tabsyLabel1.innerHTML = 'Tab One';
+  tabsyLabel1.innerHTML = 'Menu';
   
   let tabsyTabContent1 = document.createElement('div');
   tabsyTabContent1.classList.add('tab');
