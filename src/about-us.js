@@ -4,9 +4,16 @@ const aboutUs = () => {
   let aboutGrid = document.createElement('div');
   aboutGrid.id = 'aboutGrid';
   aboutNode.appendChild(aboutGrid);
-  mainNode.appendChild('aboutNode');
 
 
 };
 
-export { aboutUs }
+const aboutUsContents = () => {
+  const contentNode = document.getElementById('aboutGrid');
+  let contentGrid = document.createElement('div');
+  contentGrid.id = 'aboutGrid';
+  contentGrid.innerHTML = 'about us';
+  contentNode.appendChild(contentGrid);
+}
+
+export { aboutUs, aboutUsContents }

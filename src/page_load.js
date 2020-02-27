@@ -10,9 +10,9 @@ const startUp = () => {
   menuButton.innerHTML = 'Menu';
   aboutUsButton.id = 'aboutUsButton';
   aboutUsButton.innerHTML = 'About Us';
-  mainNode.appendChild(viewGrid);
   mainNode.appendChild(menuButton);
   mainNode.appendChild(aboutUsButton);
+  mainNode.appendChild(viewGrid);
 };
 
 
