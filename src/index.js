@@ -1,26 +1,18 @@
 //this will be the initial view controller
 import './tabsy.css';
 import { startUp } from './page_load';
-import { menu, menuContents } from './menu.js';
-import { aboutUs, aboutUsContents } from './about-us.js';
+import { menu } from './menu.js';
+import { aboutUs } from './about-us.js';
 import { clearSection } from './clearSection.js';
 
 startUp();
+menu();
+aboutUs();
+
 const menuTrigger = document.getElementById('tab1');
-const aboutTrigger = document.getElementById('aboutUsButton');
 
 menuTrigger.addEventListener('click', () =>{
   
-  clearSection();
-  menu();
-  menuContents();
+//  clearSection();
 }
 );
-aboutTrigger.addEventListener('click', () =>{
-  
-  clearSection();
-  aboutUs();
-  aboutUsContents();
-}
-);
-
