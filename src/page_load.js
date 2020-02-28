@@ -1,4 +1,5 @@
-  
+import burger from './burger.jpg'
+
 const startUp = () => { 
 
   const mainNode = document.getElementById('main-content');
@@ -13,6 +14,9 @@ const startUp = () => {
   let aboutUsButton = document.createElement('button');
   let homePageButton = document.createElement('button');
   heroImage.id = 'hero-image';
+  const myHeroImage = new Image();
+  myHeroImage.src = burger;
+  myHeroImage.id = 'myHeroImage';
   viewGrid.id = 'viewGrid';
   menuButton.id = 'menuButton';
   menuButton.innerHTML = 'Menu';
@@ -28,6 +32,7 @@ const startUp = () => {
   navBar.appendChild(menuButton);
   navBar.appendChild(aboutUsButton);
   mainNode.appendChild(heroImage);
+//  mainNode.appendChild(myHeroImage);
   mainNode.appendChild(navBar);
   mainNode.appendChild(viewGrid);
 };
